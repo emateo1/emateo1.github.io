@@ -8,6 +8,6 @@ $(document).ready(function(){
   $('.card').click(function(){
     $(this).find('p').css("opacity", 1);
     first_click = $(this).find('p').html();
-    $(document).find("#test").text(first_click);
+    $(document).find("#test").append(first_click);
   })
 });
