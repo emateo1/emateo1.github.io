@@ -4,5 +4,5 @@ $(document).ready(function(){
   }
 });
 $('card').click(function(){
-  $this Find ('p').css ("opacity","1")
+  $this Find ('p').css ("opacity";"1")
 })
