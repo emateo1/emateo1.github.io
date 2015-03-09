@@ -4,6 +4,5 @@ $(document).ready(function(){
   }
 });
 $("button").click(function(){
-  $().css("opacity","1")
-  
+  $this Find ('p').css ("opacity","1")
 })
