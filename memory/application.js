@@ -7,7 +7,7 @@ $(document).ready(function(){
   }
   $('.card').click(function(){
     $(this).find('p').css("opacity", 1);
-    first_click = $(this).find('p').text();
-    $(document).find("#test").html(first_click);
+    first_click = $(this).find('p').html();
+    $(document).find("#test").text(first_click);
   })
 });
