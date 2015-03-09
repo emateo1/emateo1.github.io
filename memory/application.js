@@ -3,6 +3,6 @@ $(document).ready(function(){
     $('#card_holder').append('<div class="card"><p>'+i+'</p></div>');
   }
 });
-$("button").click(function(){
+$("card").click(function(){
   $this Find ('p').css ("opacity","1")
 })
