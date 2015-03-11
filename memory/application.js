@@ -29,17 +29,22 @@ $(document).ready(function(){
   $('.card').click(function(){
     if(click_count == 0){
     $(this).find('p').css("opacity", 1);
+    $(this).find('p').addClass('clicked');
     first_click = $(this).find('p').html();
-    //$(document).find("#test").append(first_click);
+    click_count = 1;
     }
     else {
     $(this).find('p').css("opacity", 1);
+    $(this).find('p').addClass('clicked');
     second_click = $(this).find('p').html();
+    click_count = 0;
+      if (first_click == second_click){
+        find('p').css("opacity", 1).removeClass('clicked');
+      }
+      else {
+       $('.clicked').css('opacity', 0).removeClass('clicked');
+      }
     }
-    if (first_click == second){
-      find('p').css("opacity", 1);
-    }
-    else {
-    }
+    
   })
 });
