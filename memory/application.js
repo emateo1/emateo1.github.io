@@ -1,5 +1,25 @@
 $(document).ready(function(){
   var my_array = ["one", "one", "two", "two", "three", "three", "four", "four", "five", "five", "six", "six", "seven", "seven", "eight", "eight", "nine", "nine","ten","ten"];
+  function shuffle(array) {
+    var counter = array.length, temp, index;
+
+    // While there are elements in the array
+    while (counter > 0) {
+        // Pick a random index
+        index = Math.floor(Math.random() * counter);
+
+        // Decrease counter by 1
+        counter--;
+
+        // And swap the last element with it
+        temp = array[counter];
+        array[counter] = array[index];
+        array[index] = temp;
+    }
+
+    return array;
+}
+  var new_array=shuffle(my_array);
   var first_click = "a";
   var second_click = "a";
   var click_count = 0;
