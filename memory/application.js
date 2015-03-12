@@ -42,7 +42,7 @@ $(document).ready(function(){
         $('.clicked').css("opacity", 1).removeClass('clicked');
       }
       else {
-       $('.clicked').css('opacity', 0).removeClass('clicked');
+        setTimeout($('.clicked').css('opacity', 0).removeClass('clicked'), 2000);
       }
     }
     
