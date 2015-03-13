@@ -19,6 +19,7 @@ $(document).ready(function(){
 
     return array;
 }
+// These variable are needed to clearly distingue the different section need each function.
   var new_array=shuffle(my_array);
   var first_click = "a";
   var second_click = "a";
@@ -28,6 +29,7 @@ $(document).ready(function(){
   }
   $('.card').click(function(){
     if(click_count == 0){
+        // I had to create a if and else to make the the two cards chosen to appear and if its nt the same, it would disappears.
     $(this).find('p').css("opacity", 1);
     $(this).find('p').addClass('clicked');
     first_click = $(this).find('p').html();
@@ -43,6 +45,7 @@ $(document).ready(function(){
       }
       else {
         setTimeout(function(){$('.clicked').css('opacity', '0').removeClass('clicked')}, 500);
+        // The timer is necessary to give the player enough time to see the card and disappear also.
       }
       click_count = 0;
     }
